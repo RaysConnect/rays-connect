@@ -15,3 +15,5 @@ This public repository hosts the download website and versioned application rele
 Download `SHA256SUMS.txt` from the same release to verify package integrity. The website uses stable `/releases/latest/download/` asset links; new releases should retain the asset names and update `release.json`.
 
 Rays Connect requires a server profile. Downloads do not include server credentials or a hosted VPN subscription. Network availability and performance depend on the server and transport. Existing live TCP sessions cannot migrate between different servers.
+
+For v0.2.0, SOCKS was verified on macOS ARM64, Android ARM64 and Linux AMD64. Linux ARM64 is build-only and not runtime-tested. VPN testing was skipped on all platforms. See the release notes for the test scope and package requirements.
