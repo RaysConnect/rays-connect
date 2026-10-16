@@ -1,7 +1,7 @@
 // These relative latest-release links remain stable as new versions are published.
 const repository = 'https://github.com/RaysConnect/rays-connect';
 for (const link of document.querySelectorAll('[data-asset]')) {
-  link.href = `${repository}/releases/latest/download/${link.dataset.asset}`;
+  link.href = `${repository}/releases/download/${link.dataset.release || 'v1.1.0'}/${link.dataset.asset}`;
 }
 document.querySelector('#repository-link').href = repository;
 document.querySelector('#release-notes').href = `${repository}/releases/latest`;
