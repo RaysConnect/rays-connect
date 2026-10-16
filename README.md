@@ -39,6 +39,8 @@ For private profiles, ask your administrator for a replacement because the app
 disables their export, sharing and copying. Keep the new installation for future
 updates signed with the same key.
 
+**Android 1.1.0 refresh:** this update retains the public 1.1.0 signing key and can be installed over the earlier public 1.1.0 APK without uninstalling.
+
 ## Get connected
 
 1. Install the package for your device from the official links above.
@@ -50,8 +52,15 @@ updates signed with the same key.
    `127.0.0.1:1080`. VPN mode requires Android VPN consent or Windows administrator
    approval for the VPN helper.
 
+5. On Android, use **Settings → Add Quick Settings tile**, then accept Android's
+   tile prompt. Allow notifications to see connection status and the **Disconnect**
+   action. The tile can start or stop the saved connection.
+
 ## Client features
 
+- **Android quick controls:** a Quick Settings tile and a notification Disconnect
+  action. The connection runs in a separate foreground service process and
+  continues when the app window is dismissed. Android force-stop still stops it.
 - **Two connection modes:** local SOCKS5 and system VPN integration.
 - **Automatic transport selection:** qualifying endpoints and warm alternatives
   help new connections recover when a carrier stalls. Manual selection pins one
@@ -73,6 +82,12 @@ DNS, exact upload integrity, bulk downloads and concurrent requests. VPN checks
 ran from a separate application UID. CPU, memory, thread count and temperature
 were sampled during transfers and idle periods, including the isolated WebView
 renderer. Background UI status polling pauses while the native VPN monitor continues.
+
+The 16 October Android refresh passed 29/29 VPN checks with its UI closed and
+17/17 SOCKS checks on the physical phone. The connection survived dismissing
+the app from recent apps. A 45-second sample with only the connection process
+running measured about 23–24 MiB PSS. Initial network retries were needed; these
+results are bounded connectivity and lifecycle checks.
 
 These checks do not establish day-long stability, battery life, streaming quality
 or throughput guarantees. Performance depends on the device, access network,
