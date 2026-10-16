@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://raysconnect.github.io/rays-connect/">
+  <a href="https://raysconnect.github.io/">
     <img src="./social-preview.png" alt="Rays Connect — Your connection. Your choice." width="100%">
   </a>
 </p>
 
 <p align="center">
   <strong>SOCKS5 and system VPN clients with flexible routing.</strong><br>
-  <a href="https://raysconnect.github.io/rays-connect/">Official website</a> ·
+  <a href="https://raysconnect.github.io/">Official website</a> ·
   <a href="https://github.com/RaysConnect/rays-connect/releases/tag/v1.1.0">Latest release</a> ·
   <a href="https://github.com/RaysConnect/rays-connect/releases/tag/v0.2.0">Earlier downloads</a> ·
   <a href="https://github.com/RaysConnect/rays-connect/issues">Report an issue</a>
